@@ -1,0 +1,26 @@
+<div class="hamgmyman">
+				<% if incorrect_guesses.length == 0 %>
+				<img src="/img/image0.png">
+				<% elsif session[:incorrect_guesses].length == 1 %>
+						<img src="/img/image1.png">
+								 <% elsif session[:incorrect_guesses].length == 2 %>
+										 <img src="/img/image2.png">
+								 <% elsif session[:incorrect_guesses].length == 3 %>
+										 <img src="/img/image3.png">
+								 <% elsif session[:incorrect_guesses].length == 4%>
+										 <img src="/img/image4.png">
+									<% elsif session[:incorrect_guesses].length == 5%>
+										<img src="/img/image5.png">
+										<% elsif session[:incorrect_guesses].length == 6%>
+	 									 <img src="/img/image6.png">
+								 <% end %>
+	</div>
+
+
+<h2>The hidden chosen word: <%=hidden_word_array%></h2>
+
+<form method="post" action="choose_letter">
+	<input type="hidden" name="hidden_word_array" value='<%=hidden_word_array%>'><br>
+<h3> Second Player choose a letter:</h3>
+<input type="text" name = "letter" pattern="[A-Za-z]{1}"><br>
+	<input type="submit" value="Add"><br>
