@@ -1,21 +1,9 @@
+<%picphotos = ["/img/image0.png","/img/image1.png","/img/image2.png","/img/image3.png","/img/image4.png","/img/image5.png","/img/image6.png"]%>
 
 
 <div class="hangmyman">
-				<% if incorrect_guesses.length == 0 %>
-				<img src="/img/image0.png">
-				<% elsif session[:incorrect_guesses].length == 1 %>
-						<img src="/img/image1.png">
-								 <% elsif session[:incorrect_guesses].length == 2 %>
-										 <img src="/img/image2.png">
-								 <% elsif session[:incorrect_guesses].length == 3 %>
-										 <img src="/img/image3.png">
-								 <% elsif session[:incorrect_guesses].length == 4%>
-										 <img src="/img/image4.png">
-									<% elsif session[:incorrect_guesses].length == 5%>
-										<img src="/img/image5.png">
-										<% elsif session[:incorrect_guesses].length == 6%>
-	 									 <img src="/img/image6.png">
-								 <% end %>
+		<img src= 'picphotos[1]'>
+
 	</div>
 
 
