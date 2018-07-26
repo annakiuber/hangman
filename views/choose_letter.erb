@@ -2,6 +2,7 @@
 
 <div class="hangmyman">
 <div id="man">
+
 <%picphotos = ["/img/image0.png","/img/image1.png","/img/image2.png","/img/image3.png","/img/image4.png","/img/image5.png","/img/image6.png"]%>
 	<img src= '<%=picphotos[session[:incorrect_guesses].length]%>'>
 </div>
@@ -18,6 +19,6 @@
 	<div class= "center">
 		<div class="whiteletter">
 <input type="text" maxlength="1" name = "letter" pattern="[A-Za-z]{1}" autofocus>
-</div>
+</div
     <input type="image" class="icon" src="/img/hangmanicon.gif" width="50" height="50" allign></div></form>
 </div>
