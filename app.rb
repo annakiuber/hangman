@@ -38,13 +38,12 @@ post '/choose_letter' do
 end
 
 get '/you_won' do
-	puts "in get '/results' do params are #{params}"
-   puts "in get '/results' do session are #{session.to_a}"
-   "You Won"
+	erb :you_won, locals:{chosen_word: session[:chosen_word], hidden_word_array: session[:hidden_word_array], incorrect_guesses: session[:incorrect_guesses]}
+
 end
 
 get '/you_lost' do
 	puts "in get '/results' do params are #{params}"
    puts "in get '/results' do session are #{session.to_a}"
-   "You lost"
+   erb :you_lost, locals:{chosen_word: session[:chosen_word], hidden_word_array: session[:hidden_word_array], incorrect_guesses: session[:incorrect_guesses]}
 end

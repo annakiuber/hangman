@@ -20,7 +20,7 @@ def update_hidden_word_arr(hidden_word_arr, word, letter)
 end
 
 def update_incorrect_word_arr(incorrect_guesses, word, letter)
-  if word.split("").include?(letter) == false
+  if word.split("").include?(letter) == false && incorrect_guesses.include?(letter) == false
     incorrect_guesses << letter
   end
   incorrect_guesses

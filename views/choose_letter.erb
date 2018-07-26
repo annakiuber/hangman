@@ -1,16 +1,22 @@
-<%picphotos = ["/img/image0.png","/img/image1.png","/img/image2.png","/img/image3.png","/img/image4.png","/img/image5.png","/img/image6.png"]%>
-
+<body class="background2">
 
 <div class="hangmyman">
-		<img src= 'picphotos[1]'>
+<div id="man">
+<%picphotos = ["/img/image0.png","/img/image1.png","/img/image2.png","/img/image3.png","/img/image4.png","/img/image5.png","/img/image6.png"]%>
+	<img src= '<%=picphotos[session[:incorrect_guesses].length]%>'>
+</div>
 
-	</div>
 
 
-<h2>The hidden chosen word: <%=hidden_word_array%></h2>
+<div id="hiddenletters">
+ <p><%=hidden_word_array.join(" ")%></p>
 
 <form method="post" action="choose_letter">
-	<input type="hidden" name="hidden_word_array" value='<%=hidden_word_array%>'><br>
-<h3> Second Player choose a letter:</h3>
-<input type="text" name = "letter" pattern="[A-Za-z]{1}"><br>
-	<input type="submit" value="Add"><br>
+    <input type="hidden" name="hidden_word_array" value='<%=hidden_word_array%'>
+<h3> Second Player choose a letter:</h3></br></div>
+<div class= "submitletter">
+	<div class= "center">
+<input type="text" maxlength="1" name = "letter" pattern="[A-Za-z]{1}" autofocus>
+
+    <input type="image" class="icon" src="/img/hangmanicon.gif" width="50" height="50" allign></div></form>
+</div>
