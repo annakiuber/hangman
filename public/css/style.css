@@ -193,6 +193,11 @@ src: url(../fonts/AngryChalk.ttf);
   text-shadow: 5px 5px 0px #669999;
 
 }
+.youwon, h2 {
+  font-size: 5rem;
+  color: black;
+  text-shadow: 5px 5px 0px #669999;
+}
 
 .gohomebutton {
   text-align: center;
