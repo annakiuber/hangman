@@ -40,7 +40,7 @@ input {
     display: inline-block;
     font-family: Chalk;
     font-size: 2rem;
-    color: #336666;
+    color: white;
     border: 5px solid #336666;
     -webkit-box-shadow:
       inset 0 0 8px  rgba(0,0,0,0.1),
@@ -71,6 +71,7 @@ input[type=text] {
   text-align: center;
   display: grid;
   grid-template-columns: 2fr 1fr;
+  color: white;
 }
 #hiddenletters {
   color: black;
@@ -79,9 +80,15 @@ input[type=text] {
 
 
 }
+.whiteletter {
+  color: white;
+
+}
 #typeword {
   font-size: 2rem;
   text-align: center;
+  color: white;
+
 }
 #hiddenletters, p {
   font-size: 200%;
@@ -197,7 +204,7 @@ src: url(../fonts/AngryChalk.ttf);
    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-  
+
     font-size: 16px;
     cursor: pointer;
     -webkit-transition-duration: 0.4s; /* Safari */
